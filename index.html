@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b14">
+<meta name="description" content="JEE AETHER — chapter notes, formula revision, practice quizzes, and study progress.">
+<title>JEE AETHER | Study Beyond Limits</title>
+<style>
+:root{--bg:#070b14;--panel:#0e1627;--panel2:#111d33;--line:#203453;--text:#edf5ff;--muted:#9aacc8;--blue:#42a5ff;--cyan:#62f0ff;--glow:rgba(44,153,255,.18);--green:#60e6a8;--red:#ff7b8c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#102548 0,transparent 38%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(7,11,20,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:68px}.brand{font-weight:900;letter-spacing:.12em;font-size:1.05rem}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{color:var(--muted);text-decoration:none;font-size:.9rem}.navlinks a:hover{color:var(--cyan)}.hero{padding:62px 0 38px;display:grid;grid-template-columns:1.3fr .7fr;gap:26px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #24558b;background:#0c1d34;color:var(--cyan);border-radius:999px;padding:6px 12px;font-size:.78rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(2.5rem,7vw,5.3rem);line-height:.98;letter-spacing:-.055em;margin:18px 0}.hero h1 em{font-style:normal;color:var(--cyan);text-shadow:0 0 32px rgba(98,240,255,.24)}.lead{color:var(--muted);font-size:1.08rem;max-width:620px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{border:1px solid #2e5b8c;border-radius:12px;padding:11px 16px;color:var(--text);background:#132541;font-weight:750}.btn.primary{background:linear-gradient(110deg,#1679db,#20bde4);border-color:transparent;color:#04101e;box-shadow:0 8px 28px rgba(32,157,255,.2)}.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}.hero-card,.card{background:linear-gradient(145deg,rgba(17,29,51,.96),rgba(10,17,31,.96));border:1px solid var(--line);border-radius:20px;box-shadow:0 16px 45px rgba(0,0,0,.18)}.hero-card{padding:24px;position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;top:-70px;background:var(--glow);filter:blur(3px)}.orbit{width:112px;height:112px;border:1px solid #2366a1;border-radius:50%;margin:2px auto 16px;display:grid;place-items:center;box-shadow:0 0 35px var(--glow),inset 0 0 28px var(--glow);font-size:2rem;color:var(--cyan)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.stat{padding:12px 8px;background:#0a1323;border:1px solid #1b2b46;border-radius:12px;text-align:center}.stat strong{display:block;font-size:1.35rem;color:var(--cyan)}.stat small{color:var(--muted);font-size:.72rem}.section{padding:30px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:16px}.section h2{font-size:clamp(1.5rem,4vw,2.2rem);margin:0;letter-spacing:-.03em}.section-head p{margin:4px 0 0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:18px}.subject-icon{font-size:1.5rem;margin-bottom:8px}.card h3{margin:3px 0 6px;font-size:1.08rem}.card p{margin:0;color:var(--muted);font-size:.92rem}.tag{display:inline-block;border:1px solid #25436b;border-radius:7px;color:#9ecfff;font-size:.72rem;padding:3px 8px;margin:7px 5px 0 0}.smallbtn{margin-top:13px;border:1px solid #2b4e78;background:#10203a;color:var(--cyan);padding:8px 10px;border-radius:9px;font-weight:700}.notes-area{margin-top:16px}.notes-box{border:1px solid var(--line);background:#0a1221;border-radius:14px;padding:18px}.notes-box h3{margin-top:0}.notes-box li{margin:6px 0;color:#cfdef4}.formula-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.formula{padding:16px;border-radius:14px;background:#0b1425;border:1px solid var(--line)}.formula .subject{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--cyan)}.formula .eq{font-size:1.12rem;font-weight:800;margin:8px 0;overflow-wrap:anywhere}.formula p{color:var(--muted);font-size:.88rem;margin:0}.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px}.quizbox,.progressbox{padding:20px}.question{font-size:1.12rem;font-weight:750;margin:12px 0}.options{display:grid;gap:8px}.option{padding:11px 12px;border:1px solid #29405f;background:#0a1425;color:var(--text);text-align:left;border-radius:10px}.option:hover{border-color:var(--blue)}.option.correct{border-color:var(--green);background:#0d2a28}.option.wrong{border-color:var(--red);background:#301b29}.feedback{margin-top:12px;color:var(--muted);min-height:26px}.bar{height:9px;border-radius:99px;background:#1b2b43;overflow:hidden;margin:10px 0}.bar span{height:100%;display:block;width:0;background:linear-gradient(90deg,#2587ff,#62f0ff);transition:width .3s}.progress-row{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.9rem}.checkrow{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #1b2a42}.checkrow input{margin-top:6px;accent-color:#36b9ff;width:17px;height:17px}.checkrow label{flex:1}.checkrow small{display:block;color:var(--muted)}.reset{background:transparent;color:var(--muted);border:0;text-decoration:underline;padding:10px 0}.note{border-left:3px solid var(--blue);padding:10px 14px;color:var(--muted);background:#0b1627;border-radius:0 10px 10px 0}.footer{border-top:1px solid var(--line);margin-top:36px;padding:26px 0 40px;color:var(--muted);font-size:.85rem}.footer strong{color:var(--text)}.search{width:100%;max-width:290px;background:#0a1425;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px}.hidden{display:none!important}
+@media(max-width:760px){.nav{align-items:flex-start;padding:14px 0;flex-direction:column}.navlinks{gap:12px}.hero{grid-template-columns:1fr;padding-top:40px}.hero-card{max-width:480px}.grid{grid-template-columns:1fr 1fr}.tools{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.search{max-width:none}.formula-list{grid-template-columns:1fr}}
+@media(max-width:430px){.grid{grid-template-columns:1fr}.hero h1{font-size:2.75rem}.stats{gap:6px}.stat{padding:10px 4px}.stat strong{font-size:1.1rem}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#" style="color:inherit;text-decoration:none">JEE <span>AETHER</span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#notes">Notes</a><a href="#formulas">Formulas</a><a href="#quiz">Practice</a><a href="#progress">Progress</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <span class="eyebrow">✦ Your JEE command centre</span>
+      <h1>Study beyond<br><em>limits.</em></h1>
+      <p class="lead">A focused space for JEE Main & Advanced preparation. Revise concepts, remember key formulas, practise MCQs, and keep your daily progress moving.</p>
+      <div class="actions"><a class="btn primary" href="#notes" style="text-decoration:none">Explore chapters ↗</a><a class="btn" href="#quiz" style="text-decoration:none">Start a quick quiz</a></div>
+    </div>
+    <aside class="hero-card">
+      <div class="orbit">✦</div>
+      <h3 style="text-align:center;margin:0 0 5px">Consistency compounds.</h3>
+      <p style="text-align:center;color:var(--muted);margin:0 0 18px;font-size:.9rem">Small focused sessions. Better recall.</p>
+      <div class="stats"><div class="stat"><strong id="statDone">0</strong><small>Tasks done</small></div><div class="stat"><strong id="statQuiz">0</strong><small>Quiz correct</small></div><div class="stat"><strong id="statDays">0</strong><small>Chapters done</small></div></div>
+    </aside>
+  </section>
+
+  <section class="section" id="notes">
+    <div class="section-head"><div><h2>Chapter-wise notes</h2><p>Choose a subject and open a quick concept sheet.</p></div><input id="noteSearch" class="search" type="search" placeholder="Search chapters…" aria-label="Search chapters"></div>
+    <div class="grid" id="chapterGrid">
+      <article class="card chapter" data-search="physics electrostatics electric charge coulomb law electric field">
+        <div class="subject-icon">⚡</div><span class="tag">PHYSICS</span><h3>Electrostatics</h3><p>Charge, Coulomb’s law, electric field and potential.</p><button class="smallbtn" data-note="electro">Open quick notes ↗</button>
+      </article>
+      <article class="card chapter" data-search="physics current electricity ohm resistance circuits">
+        <div class="subject-icon">🔌</div><span class="tag">PHYSICS</span><h3>Current Electricity</h3><p>Current, resistance, cells and basic circuits.</p><button class="smallbtn" data-note="current">Open quick notes ↗</button>
+      </article>
+      <article class="card chapter" data-search="chemistry chemical bonding vbt hybridisation molecular shape">
+        <div class="subject-icon">🧪</div><span class="tag">CHEMISTRY</span><h3>Chemical Bonding</h3><p>Lewis structures, VSEPR and hybridisation.</p><button class="smallbtn" data-note="bonding">Open quick notes ↗</button>
+      </article>
+      <article class="card chapter" data-search="chemistry mole concept stoichiometry molar mass">
+        <div class="subject-icon">⚗️</div><span class="tag">CHEMISTRY</span><h3>Mole Concept</h3><p>Moles, particles, molar mass and stoichiometry.</p><button class="smallbtn" data-note="mole">Open quick notes ↗</button>
+      </article>
+      <article class="card chapter" data-search="mathematics quadratic equations roots discriminant">
+        <div class="subject-icon">∑</div><span class="tag">MATHEMATICS</span><h3>Quadratic Equations</h3><p>Roots, discriminant and relations between roots.</p><button class="smallbtn" data-note="quadratic">Open quick notes ↗</button>
+      </article>
+      <article class="card chapter" data-search="mathematics limits derivatives calculus">
+        <div class="subject-icon">∫</div><span class="tag">MATHEMATICS</span><h3>Limits & Derivatives</h3><p>Standard limits and derivative basics.</p><button class="smallbtn" data-note="calculus">Open quick notes ↗</button>
+      </article>
+    </div>
+    <div id="notesArea" class="notes-area hidden" aria-live="polite"></div>
+  </section>
+
+  <section class="section" id="formulas">
+    <div class="section-head"><div><h2>Formula revision</h2><p>Fast recall cards for high-frequency basics.</p></div></div>
+    <div class="formula-list">
+      <div class="formula"><span class="subject">Electrostatics</span><div class="eq">F = k |q₁q₂| / r²</div><p>Coulomb force magnitude between two point charges in vacuum.</p></div>
+      <div class="formula"><span class="subject">Electric field</span><div class="eq">E = F / q₀</div><p>Force per unit positive test charge.</p></div>
+      <div class="formula"><span class="subject">Current electricity</span><div class="eq">V = IR</div><p>Ohm’s law for an ohmic conductor under constant physical conditions.</p></div>
+      <div class="formula"><span class="subject">Mole concept</span><div class="eq">n = m / M</div><p>Amount of substance = sample mass / molar mass.</p></div>
+      <div class="formula"><span class="subject">Quadratic equation</span><div class="eq">x = (−b ± √(b² − 4ac)) / 2a</div><p>For ax² + bx + c = 0, where a ≠ 0.</p></div>
+      <div class="formula"><span class="subject">Differentiation</span><div class="eq">d(xⁿ)/dx = n xⁿ⁻¹</div><p>Power rule for real n where the expression is differentiable.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-head"><div><h2>Quick MCQ practice</h2><p>Answer, read the explanation, then move to the next question.</p></div></div>
+    <div class="card quizbox">
+      <div class="progress-row"><span id="qCount">Question 1 of 6</span><span id="qScore">Score: 0</span></div>
+      <div class="bar"><span id="quizBar"></span></div>
+      <div class="question" id="questionText">Loading question…</div>
+      <div class="options" id="options"></div>
+      <div class="feedback" id="feedback" aria-live="polite"></div>
+      <div class="actions"><button class="btn primary" id="nextQuestion" disabled>Next question →</button><button class="btn" id="restartQuiz">Restart quiz</button></div>
+    </div>
+  </section>
+
+  <section class="section" id="progress">
+    <div class="section-head"><div><h2>Study progress</h2><p>Your checklist is saved in this browser on this device.</p></div></div>
+    <div class="tools">
+      <div class="card progressbox">
+        <h3 style="margin-top:0">Today’s focus</h3>
+        <p style="color:var(--muted);margin-top:-4px">Tick a task when you finish it.</p>
+        <div id="taskList">
+          <div class="checkrow"><input type="checkbox" id="task1" data-task="physics"><label for="task1">Physics revision<small>Review one concept and solve a few questions.</small></label></div>
+          <div class="checkrow"><input type="checkbox" id="task2" data-task="chemistry"><label for="task2">Chemistry revision<small>Recall reactions, trends, or bonding rules.</small></label></div>
+          <div class="checkrow"><input type="checkbox" id="task3" data-task="maths"><label for="task3">Mathematics practice<small>Work through problems with full steps.</small></label></div>
+          <div class="checkrow"><input type="checkbox" id="task4" data-task="review"><label for="task4">Review mistakes<small>Write down what to revisit tomorrow.</small></label></div>
+        </div>
+        <div class="progress-row"><span>Daily completion</span><strong id="taskPercent">0%</strong></div><div class="bar"><span id="taskBar"></span></div>
+        <button class="reset" id="resetTasks">Reset today’s checklist</button>
+      </div>
+      <div class="card progressbox">
+        <h3 style="margin-top:0">Chapter tracker</h3>
+        <p style="color:var(--muted);margin-top:-4px">Mark chapters you have revised.</p>
+        <div id="chapterTasks">
+          <div class="checkrow"><input type="checkbox" data-chapter="Electrostatics" id="ch1"><label for="ch1">Electrostatics</label></div>
+          <div class="checkrow"><input type="checkbox" data-chapter="Current Electricity" id="ch2"><label for="ch2">Current Electricity</label></div>
+          <div class="checkrow"><input type="checkbox" data-chapter="Chemical Bonding" id="ch3"><label for="ch3">Chemical Bonding</label></div>
+          <div class="checkrow"><input type="checkbox" data-chapter="Mole Concept" id="ch4"><label for="ch4">Mole Concept</label></div>
+          <div class="checkrow"><input type="checkbox" data-chapter="Quadratic Equations" id="ch5"><label for="ch5">Quadratic Equations</label></div>
+          <div class="checkrow"><input type="checkbox" data-chapter="Limits & Derivatives" id="ch6"><label for="ch6">Limits & Derivatives</label></div>
+        </div>
+        <div class="progress-row"><span>Chapters revised</span><strong id="chapterPercent">0 / 6</strong></div><div class="bar"><span id="chapterBar"></span></div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:14px">Study tip: use active recall. Try to explain a concept without looking at the notes, then check what you missed. This website is a study aid; verify detailed syllabus and exam updates with official JEE sources.</p>
+  </section>
+</main>
+<footer class="footer"><div class="wrap"><strong>JEE AETHER</strong> · Built for focused preparation.<br>Free, static website. Your checklist is stored locally in this browser; clearing browser data may erase it. This demo does not send your data to a server.</div></footer>
+<script>
+const noteContent={
+ electro:{title:"Electrostatics — quick notes",points:["Electric charge is conserved; total charge of an isolated system remains constant.","Coulomb’s law: force magnitude is proportional to |q₁q₂| and inversely proportional to r².","Electric field is force per unit positive test charge: E = F/q₀.","For a point charge, E = k|q|/r²; direction is away from +q and toward −q.","Electric potential due to a point charge: V = kq/r. Potential is a scalar.","For a uniform field, potential difference along the field is ΔV = −E·Δr."]},
+ current:{title:"Current Electricity — quick notes",points:["Conventional current is the rate of flow of charge: I = dQ/dt.","Ohm’s law V = IR applies when physical conditions such as temperature remain constant.","Resistance of a uniform wire: R = ρL/A.","Resistors in series: Rₑq = R₁ + R₂ + …; the same current passes through each.","Resistors in parallel: 1/Rₑq = 1/R₁ + 1/R₂ + …; the same voltage is across each branch.","Electrical power: P = VI = I²R = V²/R for an ohmic resistor."]},
+ bonding:{title:"Chemical Bonding — quick notes",points:["Draw a Lewis structure by counting valence electrons and accounting for the total charge.","VSEPR predicts approximate molecular shape from repulsions between electron domains around a central atom.","Lone pairs generally repel more strongly than bonding pairs; lone pairs can compress bond angles.","Hybridisation is a bonding model; common introductory labels include sp, sp² and sp³.","Polarity depends on both bond polarity and molecular geometry; polar bonds can cancel in symmetric molecules.","Check formal charge using: valence electrons − nonbonding electrons − ½(bonding electrons)."]},
+ mole:{title:"Mole Concept — quick notes",points:["One mole contains the Avogadro constant, approximately 6.022 × 10²³ specified entities.","Moles: n = given mass / molar mass.","Number of entities N = nNₐ.","For gases, PV = nRT is the ideal gas equation; choose units consistently.","Balance a chemical equation before using mole ratios in stoichiometry.","Limiting reagent is consumed first and determines the maximum possible product amount."]},
+ quadratic:{title:"Quadratic Equations — quick notes",points:["Standard form: ax² + bx + c = 0 with a ≠ 0.","Discriminant D = b² − 4ac determines the nature of real roots.","D > 0: two distinct real roots; D = 0: equal real roots; D < 0: no real roots.","Sum of roots = −b/a and product of roots = c/a.","The quadratic formula is x = (−b ± √D)/(2a).","For a parabola y = ax² + bx + c, the axis of symmetry is x = −b/(2a)."]},
+ calculus:{title:"Limits & Derivatives — quick notes",points:["A limit describes the value a function approaches; it need not equal the function’s value at that point.","For finite two-sided limits, left-hand and right-hand limits must exist and agree.","Standard limit: limₓ→₀ (sin x)/x = 1 when x is in radians.","Derivative is the instantaneous rate of change and the slope of the tangent where defined.","Power rule: d(xⁿ)/dx = nxⁿ⁻¹ where the derivative exists.","For differentiable functions, product rule: (uv)' = u'v + uv'; chain rule: (f(g(x)))' = f'(g(x))g'(x)."]}
+};
+document.querySelectorAll("[data-note]").forEach(btn=>btn.addEventListener("click",()=>{
+ const item=noteContent[btn.dataset.note];const area=document.getElementById("notesArea");
+ area.innerHTML="<div class='notes-box'><h3>"+item.title+"</h3><ul>"+item.points.map(p=>"<li>"+p+"</li>").join("")+"</ul><button class='smallbtn' id='closeNotes'>Close notes</button></div>";
+ area.classList.remove("hidden");area.scrollIntoView({behavior:"smooth",block:"nearest"});
+ document.getElementById("closeNotes").addEventListener("click",()=>area.classList.add("hidden"));
+}));
+document.getElementById("noteSearch").addEventListener("input",e=>{
+ const q=e.target.value.toLowerCase().trim();
+ document.querySelectorAll(".chapter").forEach(card=>{card.classList.toggle("hidden",!((card.dataset.search+" "+card.innerText).toLowerCase().includes(q)))});
+});
+const questions=[
+ {q:"Two point charges are separated by distance r. If the distance becomes 2r while charges stay unchanged, the Coulomb force magnitude becomes:",o:["2F","F/2","F/4","4F"],a:2,e:"Coulomb force varies inversely with the square of separation: F′ = F/(2²) = F/4."},
+ {q:"The SI unit of electric potential is:",o:["Coulomb","Volt","Ohm","Tesla"],a:1,e:"Electric potential is measured in volts (V), equivalent to joules per coulomb."},
+ {q:"For an ohmic resistor with resistance R, the current when voltage V is applied is:",o:["IR","R/V","V/R","V × R"],a:2,e:"From Ohm’s law V = IR, so I = V/R."},
+ {q:"How many moles are present in 18 g of water? (Molar mass = 18 g mol⁻¹)",o:["0.5 mol","1 mol","2 mol","18 mol"],a:1,e:"n = mass/molar mass = 18 g ÷ 18 g mol⁻¹ = 1 mol."},
+ {q:"For ax² + bx + c = 0, which expression is the discriminant?",o:["b² + 4ac","a² − 4bc","b² − 4ac","b² − ac"],a:2,e:"The discriminant is D = b² − 4ac and determines the nature of the roots."},
+ {q:"If f(x) = x³, then f′(x) is:",o:["3x²","x²","3x","x⁴/4"],a:0,e:"By the power rule, d(x³)/dx = 3x²."}
+];
+let qi=0,answered=false,score=0;
+const $=id=>document.getElementById(id);
+function renderQuestion(){
+ const item=questions[qi];answered=false;$("qCount").textContent=`Question ${qi+1} of ${questions.length}`;$("qScore").textContent=`Score: ${score}`;$("quizBar").style.width=`${qi/questions.length*100}%`;$("questionText").textContent=item.q;$("feedback").textContent="";$("nextQuestion").disabled=true;$("nextQuestion").textContent=qi===questions.length-1?"See results →":"Next question →";$("options").innerHTML="";
+ item.o.forEach((label,i)=>{const b=document.createElement("button");b.className="option";b.textContent=String.fromCharCode(65+i)+". "+label;b.addEventListener("click",()=>answer(i,b));$("options").appendChild(b)});
+}
+function answer(i,button){
+ if(answered)return;answered=true;const item=questions[qi];const buttons=[...$("options").children];buttons.forEach((b,j)=>{b.disabled=true;if(j===item.a)b.classList.add("correct")});if(i===item.a){score++;button.classList.add("correct");$("feedback").textContent="Correct! "+item.e}else{button.classList.add("wrong");$("feedback").textContent="Not quite. "+item.e}
+ $("qScore").textContent=`Score: ${score}`;$("quizBar").style.width=`${(qi+1)/questions.length*100}%`;$("nextQuestion").disabled=false;
+}
+$("nextQuestion").addEventListener("click",()=>{if(!answered)return;if(qi<questions.length-1){qi++;renderQuestion()}else{$("questionText").textContent=`Quiz complete — you scored ${score} out of ${questions.length}.`; $("options").innerHTML="";$("feedback").textContent=score===questions.length?"Excellent work! Review the explanations once more to reinforce recall.":"Good practice. Review the explanations, revisit the related notes, and try again.";$("qCount").textContent="Completed";$("nextQuestion").disabled=true;$("nextQuestion").textContent="Completed";$("quizBar").style.width="100%";$("statQuiz").textContent=score;saveData() }});
+$("restartQuiz").addEventListener("click",()=>{qi=0;score=0;renderQuestion();$("statQuiz").textContent="0"});
+const STORAGE="jeeAetherProgressV1";
+function loadData(){try{return JSON.parse(localStorage.getItem(STORAGE)||"{}")}catch(e){return {}}}
+function saveData(){try{const d={tasks:{},chapters:{}};document.querySelectorAll("[data-task]").forEach(el=>d.tasks[el.dataset.task]=el.checked);document.querySelectorAll("[data-chapter]").forEach(el=>d.chapters[el.dataset.chapter]=el.checked);localStorage.setItem(STORAGE,JSON.stringify(d))}catch(e){}updateProgress()}
+function updateProgress(){
+ const tasks=[...document.querySelectorAll("[data-task]")],done=tasks.filter(x=>x.checked).length;const chapters=[...document.querySelectorAll("[data-chapter]")],chDone=chapters.filter(x=>x.checked).length;
+ $("taskPercent").textContent=Math.round(done/tasks.length*100)+"%";$("taskBar").style.width=(done/tasks.length*100)+"%";$("chapterPercent").textContent=`${chDone} / ${chapters.length}`;$("chapterBar").style.width=(chDone/chapters.length*100)+"%";$("statDone").textContent=done;$("statDays").textContent=chDone;
+}
+function restoreProgress(){const d=loadData();document.querySelectorAll("[data-task]").forEach(el=>el.checked=!!(d.tasks&&d.tasks[el.dataset.task]));document.querySelectorAll("[data-chapter]").forEach(el=>el.checked=!!(d.chapters&&d.chapters[el.dataset.chapter]));updateProgress()}
+document.querySelectorAll("[data-task],[data-chapter]").forEach(el=>el.addEventListener("change",saveData));
+$("resetTasks").addEventListener("click",()=>{document.querySelectorAll("[data-task]").forEach(el=>el.checked=false);saveData()});
+renderQuestion();restoreProgress();
+</script>
+</body>
+</html>
